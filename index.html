@@ -6,11 +6,31 @@
 -->
 <html>
 	<head>
-		<title>Felix Akanno Porfolio</title>
+		<title>Felix Akanno | Data Analytics Portfolio</title>
+        <meta name="description" content="Portfolio of Felix Akanno: business intelligence, SQL, Tableau, data analytics, and biostatistics projects." />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            /* Project-specific additions; retains the original HTML5 UP theme. */
+            .retail-quick-facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.85rem; margin: 1.8rem 0 1rem; }
+            .retail-quick-facts > div { background: #f5f8fb; border: 1px solid #e1e8ee; padding: 1.1rem 0.55rem; text-align: center; }
+            .retail-quick-facts strong { display: block; font-family: "Source Sans Pro", Helvetica, sans-serif; color: #243f58; font-size: 1.55rem; line-height: 1.25; }
+            .retail-quick-facts span { display: block; color: #596c7b; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.35rem; }
+            .retail-tech { text-align: center; margin: 0.75rem 0 1.6rem; }
+            .retail-tech span { display: inline-block; border: 1px solid #ced8e1; color: #445d72; padding: 0.13rem 0.65rem; margin: 0.18rem; font-size: 0.74rem; letter-spacing: 0.025em; }
+            .retail-summary { max-width: 54rem; margin: 0.5rem auto 1.4rem; text-align: center; }
+            .retail-project-actions { flex-wrap: wrap; }
+            .retail-method-note { color: #617484; font-size: 0.84rem; max-width: 54rem; margin: 1.35rem auto 0; text-align: center; line-height: 1.65; }
+            .portfolio-about { padding: 3rem 4rem; }
+            .portfolio-about p { margin-bottom: 0; }
+            @media screen and (max-width: 736px) {
+                .retail-quick-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+                .retail-quick-facts strong { font-size: 1.35rem; }
+                .portfolio-about { padding: 2rem 1.5rem; }
+            }
+        </style>
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +41,7 @@
 					<div id="intro">
 						<h1>Felix Akanno Portfolio<br />
 						</h1>
-						<p>Data Analytics & Biostatistics Professional versed in SQL, Python, R, machine learning, Excel, Power BI, and Cognos Analytics<a href="https://html5up.net/license"></a>.</p>
+						<p>Data Analytics &amp; Biostatistics professional working with SQL, Python, R, Tableau, machine learning, Excel, Power BI, and Cognos Analytics.</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -35,7 +55,8 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-						<li class="active"><a href="index.html">Project</a></li>
+						<li class="active"><a href="#main">Projects</a></li>
+                            <li><a href="#about">About</a></li>
 						
 						</ul>
 						<ul class="icons">
@@ -45,29 +66,53 @@
 						</ul>
 					</nav>
 
-				<!-- Main -->
-					<div id="main">
+                <!-- Main -->
+                    <div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2><a href="https://github.com/FelixAkanno/automobile-sales-dashboard">Automotive Market Intelligence & Recession Resilience<br />
-									</a>(Part 1)</h2>
-									<p>This notebook analyses how automobile sales behaved across six U.S. recessionary periods (1980, 1981–82, 1991, 2000–01, 2007–09, and the 2020 COVID-19 shock) compared with non-recession years. Using economic covariates such as consumer confidence, GDP, unemployment, advertising expenditure, and price, we surface patterns that can inform pricing, inventory, and marketing strategy for automotive stakeholders.<br />
-									<br />
-									</p>
-								</header>
-								<a href="https://github.com/FelixAkanno/automobile-sales-dashboard" class="image main"><img src="images/car_1.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/FelixAkanno/automobile-sales-dashboard" class="button large">View Project</a></li>
-								</ul>
-							</article>
+                        <!-- Featured retail BI case study -->
+                        <article class="post featured" id="retail-bi">
+                            <header class="major">
+                                <span class="date">Featured Business Intelligence Project</span>
+                                <h2><a href="https://github.com/FelixAkanno/retail-sales-business-intelligence" target="_blank" rel="noopener noreferrer">Retail Sales &amp;<br />Profitability Analytics</a></h2>
+                                <p class="retail-summary">An end-to-end analytics case study examining sales performance, customer behaviour, product mix, and discount-related profitability across five retail stores. Built with locally validated ETL, dimensional modeling, SQL, and interactive Tableau dashboards.</p>
+                            </header>
 
-						
-						
+                            <div class="retail-quick-facts" aria-label="Retail project key performance indicators">
+                                <div><strong>$14.30M</strong><span>Net revenue</span></div>
+                                <div><strong>$3.83M</strong><span>Net profit</span></div>
+                                <div><strong>26.75%</strong><span>Net margin</span></div>
+                                <div><strong>5,000</strong><span>Transactions</span></div>
+                            </div>
+                            <div class="retail-tech" aria-label="Technologies used">
+                                <span>Tableau Public</span><span>SQL</span><span>Python ETL</span><span>Dimensional Modeling</span><span>Data Visualization</span>
+                            </div>
+                            <p class="retail-summary">Developed three interactive management dashboards and a Store &rarr; Product &rarr; Transaction drill-through. Findings highlight the importance of evaluating category profit alongside revenue and monitoring the relationship between discounts and margins.</p>
+                            <ul class="actions special retail-project-actions">
+                                <li><a href="https://github.com/FelixAkanno/retail-sales-business-intelligence" class="button large" target="_blank" rel="noopener noreferrer">View GitHub Case Study</a></li>
+                                <li><a href="https://public.tableau.com/app/profile/felix.akanno/viz/NationalRetailChainEnterpriseBICapstone/SalesOverview" class="button large primary" target="_blank" rel="noopener noreferrer">Explore Live Dashboards</a></li>
+                            </ul>
+                            <p class="retail-method-note">Portfolio capstone project &bull; Retail transactions dated September 2023–September 2025 &bull; Public-facing data excludes direct customer identifiers. SQL for BigQuery is documented but was not executed in Google Cloud.</p>
+                        </article>
 
-					</div>
+                        <!-- Other projects: existing automotive project preserved -->
+                        <section class="posts" aria-label="More analytics projects">
+                            <article>
+                                <header>
+                                    <h2><a href="https://github.com/FelixAkanno/automobile-sales-dashboard" target="_blank" rel="noopener noreferrer">Automotive Market Intelligence &amp; Recession Resilience (Part 1)</a></h2>
+                                </header>
+                                <a href="https://github.com/FelixAkanno/automobile-sales-dashboard" class="image fit" target="_blank" rel="noopener noreferrer"><img src="images/car_1.jpg" alt="Automotive market analytics project" /></a>
+                                <p>This notebook analyses automobile sales across six U.S. recessionary periods compared with non-recession years. It explores the relationships among sales, consumer confidence, GDP, unemployment, advertising expenditure, and pricing to inform business strategy.</p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/FelixAkanno/automobile-sales-dashboard" class="button" target="_blank" rel="noopener noreferrer">View Project</a></li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <section class="post portfolio-about" id="about">
+                            <header><h2>About Me</h2></header>
+                            <p>I work at the intersection of data analytics and biostatistics, using SQL, Python, R, Tableau, machine learning, and business intelligence tools to translate data into practical insights. My portfolio documents both the technical workflow and the decisions that analytics can help inform. See my <a href="https://github.com/FelixAkanno" target="_blank" rel="noopener noreferrer">GitHub projects</a> or <a href="https://www.linkedin.com/in/felixakanno" target="_blank" rel="noopener noreferrer">connect on LinkedIn</a>.</p>
+                        </section>
+                    </div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -75,16 +120,11 @@
 						<section class="split contact">
 							<section class="alt">
 								<h3>Address</h3>
-								<p>3280 hospital drive northwest<br />
-								Calgary, AB T2N 4Z6</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
+								<p>Calgary, Alberta, Canada</p>
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">felixakanno11@gmail.com</a></p>
+								<p><a href="mailto:felixakanno11@gmail.com">felixakanno11@gmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
@@ -98,7 +138,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Felix Akanno</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
